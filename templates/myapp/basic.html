@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+*{
+box-sizing: border-box;
+}
+
+body{
+font-family:Arial,Helvetica;
+}
+
+header{
+background-color:rgb(119, 227, 119);
+padding: 0px;
+text-align: inline;
+font-size:20px;
+color: black;
+
+}
+
+nav{
+float:left;
+width: 20%;
+height:600px;
+background: #232222;
+padding: 20px;
+}
+
+nav ul{
+list-style-type: none;
+padding:5%;
+}
+
+article{
+float: left;
+width: 80%;
+padding: 30px;
+background-color: black;
+height:600px;
+}
+
+section::after{
+content:"";
+display:table;
+clear:both;
+}
+
+footer{
+background-color:rgb(119, 227, 119);
+text-align:center;
+color:white;
+padding: 5px;
+}
+
+.b{
+    padding:10px;
+}
+
+.b a{
+    padding:10px;
+    text-decoration: none;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+    <div class="b">
+    <i class="material-icons"><a href="/imagesPage">home</a></i>
+    <a href="/alphabets">Alphabets</a>
+    <a href="/numbers">Numbers</a>
+    <a href="/shapes">Shapes</a>
+    <a href="/colors">Colors</a>
+    <a href="/index">SignOut</a>
+    </div>
+</header>
+
+<section>
+<nav>
+<ul>
+<h3><u>choose any for more info</u></h3>
+<a href="\apple" target="iframe_a">
+<img src="C:\Users\schar\OneDrive\Desktop\kastapadu\apple.jpg" alt="apple image" width=50 height=50/>
+<figcaption>Apple</figcaption>
+<a href="\ball" target="iframe_a">
+<img src="C:\Users\schar\OneDrive\Desktop\kastapadu\ball.jpg" alt="ball image" width=50 height=50/>
+<figcaption>Ball</figcaption>
+<a href="\cat" target="iframe_a">
+<img src="C:\Users\schar\OneDrive\Desktop\kastapadu\cat.jpg" alt="cat image" width=50 height=50/>
+<figcaption>Cat</figcaption>
+<a href="\dog" target="iframe_a">
+<img src="C:\Users\schar\OneDrive\Desktop\kastapadu\dog.jpg" alt="dog image" width=50 height=50/>
+<figcaption>Dog</figcaption>
+</ul>
+</nav>
+
+<article style="border:10px solid black; padding:0px">
+<iframe src="\alphabets" name="iframe_a" height="580px" width="100%" float="right"></iframe>
+</article>
+</section>
+</body>
+
+<footer>
+<p>footer</p>
+</footer>
+</html>

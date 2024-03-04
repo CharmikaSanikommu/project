@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    
+</head>
+<body style="background-color: rgb(133, 200, 200);">
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+    <strong>Message:</strong> {{ message }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    {% endfor %}
+    
+    <h2 align="center">SignUp to create your account</h2>
+
+    <form action="/signup" method="POST" align="center">
+    {% csrf_token %}
+
+        <lable for="">Username:</lable>
+        <input type="text" id="username" name="username"><br><br>
+
+        <lable for="">First Name:</lable>
+        <input type="text" id="first_name" name="first_name"><br><br>
+
+        <lable for="">Last Name:</lable>
+        <input type="text" id="last_name" name="last_name"><br><br>
+
+        <lable for="">Email:</lable>
+        <input type="email" id="email" name="email"><br><br>
+
+        <lable for="">Password:</lable>
+        <input type="password" id="pass1" name="pass1"><br><br>
+
+        <lable for="">Confirm Password:</lable>
+        <input type="password" id="pass2" name="pass2"><br><br>
+
+        <button type="submit"><a href="\signin"></a>Sign Up</button>
+
+    </form>
+    
+</body>
+</html>
